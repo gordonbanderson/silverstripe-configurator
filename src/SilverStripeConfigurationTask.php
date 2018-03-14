@@ -46,8 +46,8 @@ class SilverStripeConfigurationTask extends \SilverStripe\Dev\BuildTask
 
     private function copyConfigurationFile($name)
     {
-        $sourcePath = getcwd() . "/silverstripe-dev-configurator/configurations/" . $name;
-        $destinationPath = getcwd() . "/mysite/_config/" . $name;
+        $sourcePath = getcwd() . "/../..//silverstripe-dev-configurator/configurations/" . $name;
+        $destinationPath = getcwd() . "/../..//mysite/_config/" . $name;
         copy($sourcePath, $destinationPath);
     }
 }
