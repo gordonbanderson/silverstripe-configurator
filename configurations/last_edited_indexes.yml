@@ -1,0 +1,13 @@
+# Index last edited for performance reasons
+
+SilverStripe\CMS\Model\SiteTree:
+ indexes:
+   LastEdited: true
+
+SilverStripe\Security\Member:
+ indexes:
+   LastEdited: true
+
+SilverStripe\Security\Group:
+ indexes:
+   LastEdited: true

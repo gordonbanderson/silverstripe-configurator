@@ -1,0 +1,22 @@
+{
+    "name": "suilven/silverstripe-configurator",
+    "description": "Install one of several standard config files for a new development site",
+    "type": "lilbrary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gordon Anderson",
+            "email": "gordon.b.anderson@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Suilven\\SSConfigurator\\": "src/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.2"
+    }
+}

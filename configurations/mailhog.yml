@@ -1,0 +1,17 @@
+#Redirect email to a local instance of mailhog
+
+---
+Name: mailhogemail
+After:
+  - '#emailconfig'
+---
+SilverStripe\Core\Injector\Injector:
+  Swift_Transport:
+    class: Swift_SmtpTransport
+    properties:
+      Host: mailhog
+      Port: 1025
+
+SilverStripe\Control\Email\Email:
+  # This can be any semantically valid email address, does not have to exist
+  admin_email: admin@admin.com
