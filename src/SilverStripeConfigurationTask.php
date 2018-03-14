@@ -14,6 +14,12 @@ class SilverStripeConfigurationTask extends \SilverStripe\Dev\BuildTask
     private static $segment = 'configure';
 
 
+    /**
+     * Execute the task
+     *
+     * @param \SilverStripe\Control\HTTPRequest $request
+     * @return null
+     */
     public function run($request)
     {
         echo 'Running task';
@@ -44,6 +50,10 @@ class SilverStripeConfigurationTask extends \SilverStripe\Dev\BuildTask
 
     }
 
+    /**
+     * Copy a config file by name to the mysite/_config directory
+     * @param $name the name of the config file, e.g. mailhog.yml
+     */
     private function copyConfigurationFile($name)
     {
         $sourcePath = getcwd() . "/../..//silverstripe-dev-configurator/configurations/" . $name;
