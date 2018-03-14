@@ -1,7 +1,7 @@
 {
     "name": "suilven/silverstripe-configurator",
     "description": "Install one of several standard config files for a new development site",
-    "type": "lilbrary",
+    "type": "silverstripe-vendormodule",
     "license": "MIT",
     "authors": [
         {
