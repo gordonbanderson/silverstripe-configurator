@@ -35,6 +35,9 @@ class SilverStripeConfigurationTask extends \SilverStripe\Dev\BuildTask
                 case "mailhog":
                     $this->copyConfigurationFile('mailhog.yml');
                     break;
+                case "blogwidget":
+                    $this->copyConfigurationFile('blogwidgets.yml');
+                    break;
                 case "lastedited":
                     $this->copyConfigurationFile('last_edited_indexes.yml');
                     break;
