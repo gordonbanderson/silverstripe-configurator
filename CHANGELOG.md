@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.2.1](https://github.com/gordonbanderson/silverstripe-configurator/tree/0.2.1) (2018-03-16)
+[Full Changelog](https://github.com/gordonbanderson/silverstripe-configurator/compare/0.2.0...0.2.1)
+
 ## [0.2.0](https://github.com/gordonbanderson/silverstripe-configurator/tree/0.2.0) (2018-03-14)
 [Full Changelog](https://github.com/gordonbanderson/silverstripe-configurator/compare/0.1.1...0.2.0)
 
