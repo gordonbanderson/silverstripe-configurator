@@ -30,8 +30,7 @@ class SilverStripeConfigurationTask extends \SilverStripe\Dev\BuildTask
         $csv = $_GET['configs'];
         $configs = explode(',', $csv);
 
-        foreach($configs as $config)
-        {
+        foreach ($configs as $config) {
             switch ($config) {
                 case "mailhog":
                     $this->copyConfigurationFile('mailhog.yml');
@@ -47,7 +46,6 @@ class SilverStripeConfigurationTask extends \SilverStripe\Dev\BuildTask
                     break;
             }
         }
-
     }
 
     /**
