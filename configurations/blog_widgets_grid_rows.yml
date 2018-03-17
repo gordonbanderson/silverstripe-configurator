@@ -1,0 +1,7 @@
+---
+Name: suilven-grid-rows-blow-widgets
+---
+# Categories Widget
+SilverStripe\Blog\Widgets\BlogCategoriesWidgetController:
+  extensions:
+    - WebOfTalent\GridRows\GridRowsExtension
