@@ -44,6 +44,9 @@ class SilverStripeConfigurationTask extends \SilverStripe\Dev\BuildTask
                 case "logfile":
                     $this->copyConfigurationFile('logging.yml');
                     break;
+                case "comments":
+                    $this->copyConfigurationFile('comments.yml');
+                    break;
                 default:
                     error_log('Config ' . $config . ' not recognized');
                     break;
@@ -57,8 +60,8 @@ class SilverStripeConfigurationTask extends \SilverStripe\Dev\BuildTask
      */
     private function copyConfigurationFile($name)
     {
-        $sourcePath = getcwd() . "/../..//silverstripe-dev-configurator/configurations/" . $name;
-        $destinationPath = getcwd() . "/../..//mysite/_config/" . $name;
+        $sourcePath = getcwd() . "/vendor/suilven/silverstripe-configurator/configurations/" . $name;
+        $destinationPath = getcwd() . "/mysite/_config/" . $name;
         copy($sourcePath, $destinationPath);
     }
 }
