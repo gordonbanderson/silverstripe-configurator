@@ -1,0 +1,3 @@
+DNADesign\Populate\Populate:
+  include_yaml_fixtures:
+    - 'mysite/fixtures/populate.yml'

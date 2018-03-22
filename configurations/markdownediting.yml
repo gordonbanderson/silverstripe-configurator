@@ -1,0 +1,8 @@
+---
+Name: markdownediting
+After:
+  - '#corefieldtypes'
+---
+SilverStripe\Core\Injector\Injector:
+  HTMLText:
+    class: SilverStripers\markdown\db\MarkdownText
