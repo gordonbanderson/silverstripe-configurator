@@ -32,11 +32,14 @@ class SilverStripeConfigurationTask extends \SilverStripe\Dev\BuildTask
 
         foreach ($configs as $config) {
             switch ($config) {
-                case "mailhog":
-                    $this->copyConfigurationFile('mailhog.yml');
-                    break;
                 case "blogwidget":
                     $this->copyConfigurationFile('blogwidgets.yml');
+                    break;
+                case "blogwidgetgridrows":
+                    $this->copyConfigurationFile('blog_widgets_grid_rows.yml');
+                    break;
+                case "comments":
+                    $this->copyConfigurationFile('comments.yml');
                     break;
                 case "lastedited":
                     $this->copyConfigurationFile('last_edited_indexes.yml');
@@ -44,9 +47,19 @@ class SilverStripeConfigurationTask extends \SilverStripe\Dev\BuildTask
                 case "logfile":
                     $this->copyConfigurationFile('logging.yml');
                     break;
-                case "comments":
-                    $this->copyConfigurationFile('comments.yml');
+                case "mailhog":
+                    $this->copyConfigurationFile('mailhog.yml');
                     break;
+                case "markdownediting":
+                    $this->copyConfigurationFile('markdownediting.yml');
+                    break;
+                case "populatedev":
+                    $this->copyConfigurationFile('populatedev.yml');
+                    break;
+                case "queuedjobstofile":
+                    $this->copyConfigurationFile('queuedjobstofile.yml');
+                    break;
+
                 default:
                     error_log('Config ' . $config . ' not recognized');
                     break;
