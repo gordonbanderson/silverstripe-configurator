@@ -3,7 +3,7 @@ Name: queuedjobstofile
 After: '#queuedjobsettings'
 ---
 
-#Following config enabled markers to be written to a queue directory, in order that inotify can be used
+#Following config enables file markers to be written to a fixed job queue directory, in order that inotify can be used
 Symbiote\QueuedJobs\Services\QueuedJobService:
   #This needs to be absolute.  Does not seem to work with cache.  Also directory /var/www/silverstripe needs to exist
   cache_dir: '/var/www/silverstripe/queuedjobs'
