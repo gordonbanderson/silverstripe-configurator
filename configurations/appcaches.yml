@@ -1,0 +1,15 @@
+---
+Name: appcaches
+---
+#Initial cache simply called app
+SilverStripe\Core\Injector\Injector:
+  Psr\SimpleCache\CacheInterface.app:
+    factory: SilverStripe\Core\Cache\CacheFactory
+    constructor:
+      namespace: "app"
+
+
+  Psr\SimpleCache\CacheInterface.Wibble:
+    factory: SilverStripe\Core\Cache\CacheFactory
+    constructor:
+      namespace: "Wibble"

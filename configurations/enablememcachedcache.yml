@@ -1,0 +1,15 @@
+---
+Name: silverstripecachememcached
+After:
+  - '#corecache'
+---
+SilverStripe\Core\Injector\Injector:
+  MemcachedClient:
+    class: 'Memcached'
+    calls:
+      - [ addServer, [ 'memcached', 11211 ] ]
+  MemcachedCacheFactory:
+    class: 'SilverStripe\Core\Cache\MemcachedCacheFactory'
+    constructor:
+      client: '%$MemcachedClient'
+  SilverStripe\Core\Cache\CacheFactory: '%$MemcachedCacheFactory'
